@@ -23,7 +23,7 @@ Refinery::Resources.configure do |config|
   # config.dragonfly_secret = "a26b5a37fa5456769a2e436222958682ee8ff8f738cf568b"
   # config.dragonfly_url_format = "/system/resources/:job/:basename.:format"
   # config.dragonfly_url_host = ""
-  # config.datastore_root_path = "/Users/carlosi13/rails_projects/ref_templates/ref_base01_750/public/system/refinery/resources"
+  # config.datastore_root_path = "/Users/carlosi13/rails_projects/ref_templates/bh01/public/system/refinery/resources"
   # config.content_disposition = :attachment
 
   # Configure Dragonfly custom storage backend
