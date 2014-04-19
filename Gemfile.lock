@@ -59,6 +59,10 @@ GEM
     erubis (2.7.0)
     excon (0.31.0)
     execjs (2.0.2)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
     fog (1.20.0)
       builder
       excon (~> 0.31.0)
@@ -74,8 +78,14 @@ GEM
     globalize (3.0.4)
       activemodel (>= 3.0.0, < 4.0.0)
       activerecord (>= 3.0.0, < 4.0.0)
+    hashie (2.1.0)
     hike (1.2.3)
     i18n (0.6.9)
+    instagram (0.11.0)
+      faraday (>= 0.7, < 0.9)
+      faraday_middleware (~> 0.8)
+      hashie (>= 0.4.0)
+      multi_json (~> 1.0, >= 1.0.3)
     journey (1.0.4)
     jquery-rails (2.3.0)
       railties (>= 3.0, < 5.0)
@@ -87,6 +97,7 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.2)
     multi_json (1.9.0)
+    multipart-post (1.2.0)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
@@ -209,6 +220,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 3.2.1)
   fog
+  instagram
   jquery-rails
   pg
   rails (= 3.2.17)
