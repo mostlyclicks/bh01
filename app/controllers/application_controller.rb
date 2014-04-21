@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
   protected
 
     def shop_image
-      @photos = Instagram.user_recent_media("blueheronbikes", {:count => 1})
+      @photos = Instagram.user_recent_media("813985406", {:count => 1})
     end
 end
