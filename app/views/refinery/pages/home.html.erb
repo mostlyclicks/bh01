@@ -49,10 +49,40 @@
       <div class="col-md-4">
         <%= raw @page.content_for(:promo) %>
 
-        <% @photos.each do |photo| %>
-          
-          <%= image_tag photo.images.standard_resolution.url %>
-        <% end %>
+
+<!--         <%# @photos.each do |photo| %>
+          <%#= image_tag photo.images.standard_resolution.url %>
+        <%# end %> -->
+
+
+        <div id="carousel-main" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators hidden-xs">
+            <% @photos.each_with_index do |image, index| %>
+              <li data-target="#carousel-main" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
+            <% end %>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <% @photos.each_with_index do |image, index| %>
+              <div class="item <% if index == 0 %>active<% end %>">
+                <%= image_tag image.images.standard_resolution.url %>
+               <!--<div class="carousel-caption">
+                 ...
+                </div> -->
+              </div>
+            <% end %>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-main" data-slide="prev">
+            <span class="fa fa-chevron-left" style="position:absolute;top:47%;"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-main" data-slide="next">
+            <span class="fa fa-chevron-right" style="position:absolute;top:47%;"></span>
+          </a>
+        </div>
 
 
       </div>
