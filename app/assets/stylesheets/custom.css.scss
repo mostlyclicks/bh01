@@ -201,7 +201,7 @@ body {
 }
 
 footer {
-  h1, p, td {color:#fff;}
+  h1, p, td {color:lighten($dark-teal, 30%);}
   a {
     color:#fff;
   }
