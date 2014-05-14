@@ -1,0 +1,51 @@
+@import 'variables.css.scss';
+
+
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { 
+  body {border:5px solid red;}
+  #header {min-height:200px;}
+  #logo {width:25%;}
+  #phone {
+    text-align:right;
+  }
+  #phone.text-center {
+    font-size:18px;
+    margin-top:30px;
+  }
+
+  #about {
+    h1 {
+      font-size:42px !important;
+      margin-top:.5em;
+      line-height: 1em;
+    }
+    .lead {
+      font-size:18px;
+    }
+    #carousel-main {
+    margin-top:0px;
+     transform:rotate(3deg);
+     -ms-transform:rotate(3deg); /* IE 9 */
+     -webkit-transform:rotate(3deg); /* Opera, Chrome, and Safari */
+    }
+  }
+
+
+
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) { 
+  body {border:5px solid green;}
+  #logo {width:20%;}
+
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { 
+    body {border:5px solid blue;}
+
+ }

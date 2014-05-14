@@ -3,6 +3,8 @@
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <head>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Oleo+Script|Pacifico' rel='stylesheet' type='text/css'>
     <%= render "/refinery/head" %>
   </head>
   <body id="<%= canonical_id @page %>">
@@ -12,10 +14,10 @@
         <%#= render "/refinery/header" -%>
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
-              <%= image_tag 'rails.png' %>
+            <div class="col-md-2 col-sm-2" id="logo">
+              <%= image_tag 'logo-clean.png', class: 'img-responsive' %>
             </div>
-            <div class="col-md-9 text-right">
+            <div class="col-md-9 col-sm-8 col-xs-12 text-center" id="phone">
               <%= yield :phone_email %>
             </div>
           </div>

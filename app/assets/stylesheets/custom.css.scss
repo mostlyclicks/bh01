@@ -1,22 +1,204 @@
 @import 'variables.css.scss';
 
+body {
+  // background-image:url(/assets/subtle_stripes_fade_blue.gif);
+  background-color:lighten($dark-teal, 10%);
+  background-repeat:repeat;
+  //background-color:$bh-fade-blue;
+}
+
+
+
+
 #header {
-  min-height:70px;
+  min-height:330px;
   padding:20px;
 
 }
 
+#top {
+  // border-radius:20px;
+  height:90px;
+  // background-color:$bh-fade-yellow;
+  // background-image:url(/assets/bg-mustard.png);
+}
+
+#logo {
+  img {margin:0 auto;}
+  
+  width:50%;
+  margin:0 auto;
+}
+
+#phone.text-center {
+  font-family:$source-sans;
+  font-weight:700;
+  color:#fff;
+  line-height: .90em;
+  margin-top:20px;
+  font-size:30px;
+}
+
+#about {
+
+  h1 {
+    font-family:$oleo;
+    font-size:40px;
+    color:darken($bh-fade-yellow,8%);
+    margin-top:0;
+    line-height: .85em;
+  }
+  p {font-family:$source-sans;}
+  margin-top:10px;
+  #carousel-main {
+    margin-top:0px;
+    // transform:rotate(3deg);
+    // -ms-transform:rotate(3deg); /* IE 9 */
+    // -webkit-transform:rotate(3deg); /* Opera, Chrome, and Safari */
+    
+    border:15px solid darken(white, 5%);
+    box-shadow:8px 8px 1px rgba(0,0,0,.2);
+
+  }
+}
+
+// .top_box{transform:  rotate(-5deg) scale(1) skew(-19deg) translate(0px);-webkit-transform:  rotate(-5deg) scale(1) skew(-19deg) translate(0px);-moz-transform: rotate(-5deg) scale(1) skew(-19deg) translate(0px);-o-transform:  rotate(-5deg) scale(1) skew(-19deg) translate(0px);-ms-transform:  rotate(170deg) scale(1) skew(-19deg) translate(0px);}
+// .top_box{
+//   background-color:$bh-fade-yellow;
+//   height:300px;
+//   border:8px solid darken($bh-fade-yellow, 20%);
+//   border-radius:10px 35% 10px 35%;
+//   box-shadow: 20px 30px 0px rgba(0,0,0, .2);
+//   .lead {
+//     font-family: $yesteryear;
+//     font-size:32px;
+//   }
+// }
 #main-img {
 
 }
 
 #main-content {
+  border-top:20px solid rgba(213,201,118,.5);
+  margin-top:-150px;
   min-height:200px;
+  background-color:lighten($bh-fade-yellow, 15%);
+  .row {
+    background-image:url(/assets/bike.png);
+    background-repeat:no-repeat;
+    background-position-x:0%;
+    background-position-y:180px;
+  }
+
+
   #about {
     padding:22px;
   }
 }
 
-#info-content {
+.trempealeau-intro {
 
+  h1 {font-family:$pacifico;font-size:70px;color:lighten($bh-fade-green,20%);}
+  background-color:$bh-fade-green;
+  min-height:120px;
+  
+}
+
+.trempealeau-body {
+  h1 {font-family:$pacifico;font-size:70px;color:#fff;}
+  padding-top:40px;
+  padding-bottom:40px;
+  background-image:url(/assets/storefront4.jpg);
+  background-position-x:50%;
+  background-position-y:100%;
+  background-size:cover;
+  background-color:lighten($bh-fade-green,20%);
+  min-height:950px;
+  max-height:951px;
+
+}
+
+#trempealeau-text {
+  padding:40px 0;
+  min-height:375px;
+  // background-color:lighten($bh-fade-green, 30%);
+  background-color:#cccdc2;
+  .lead {
+    // color:rgba(0,0,0,.5);
+    color:rgba(0,0,0,.6);
+    font-size:26px;
+    font-weight:100;
+  }
+
+
+}
+
+#rental-services-accessories {
+  background-color:darken($bh-fade-blue, 25%);
+  min-height:400px;
+  padding:20px 0 40px 0;
+  color:lighten($bh-fade-blue, 10%);  
+  h1 {
+    font-family:$oleo;
+
+    
+
+  }
+  img {
+    padding:20px;
+
+  }
+
+  p {
+
+  }
+}
+
+#brands {
+  background-image:url(/assets/bike2.jpg);
+  background-size:cover;
+  background-position-y:50%;
+  background-position-x:50%;
+  min-height: 500px;
+  padding:40px 0;
+  h1 {
+    font-family:$oleo;
+    font-size:96px;
+    color:#fff;
+    text-shadow: 3px 3px 1px rgba(0,0,0, .4);
+    
+
+  }
+  #brandbox {
+    background-color:rgba(0,0,0,.8);
+    padding:20px;
+    color:#fff;
+
+  }
+  .logos {
+    height:120px;
+
+
+    img {
+      margin:0 auto;
+      line-height:120px;
+      // vertical-align: middle;
+      // display:inline;
+    }
+  }
+}
+
+#info-content {
+    h3, p, td, i {color:#fff;}
+  a {
+    color:#fff;
+  }
+
+}
+
+footer {
+  h1, p, td {color:#fff;}
+  a {
+    color:#fff;
+  }
 }
