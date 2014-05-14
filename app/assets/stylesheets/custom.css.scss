@@ -201,6 +201,10 @@ body {
 }
 
 footer {
+  background-color:darken($dark-teal, 20%);
+  padding:10px;
+  margin-top:20px;
+  font-size:10px;
   h1, p, td {color:lighten($dark-teal, 30%);}
   a {
     color:#fff;
