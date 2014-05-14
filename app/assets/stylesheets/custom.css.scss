@@ -1,8 +1,8 @@
 @import 'variables.css.scss';
 
 body {
-  // background-image:url(/assets/subtle_stripes_fade_blue.gif);
-  background-color:lighten($dark-teal, 10%);
+  background-image:url(/assets/squairy_light.gif);
+  // background-color:lighten($dark-teal, 10%);
   background-repeat:repeat;
   //background-color:$bh-fade-blue;
 }
@@ -32,7 +32,7 @@ body {
 
 #phone.text-center {
   font-family:$source-sans;
-  font-weight:700;
+  font-weight:100;
   color:#fff;
   line-height: .90em;
   margin-top:20px;
@@ -145,7 +145,8 @@ body {
 
   }
   img {
-    padding:20px;
+    border:20px solid rgba(0,0,0,.1);
+    margin-bottom:20px;
 
   }
 
@@ -189,9 +190,9 @@ body {
 }
 
 #info-content {
-    h3, p, td, i {color:#fff;}
+    h3, p, td, i.fa {color:lighten($dark-teal, 40%);}
   a {
-    color:#fff;
+    color:lighten($dark-teal, 50%);
   }
 
 }

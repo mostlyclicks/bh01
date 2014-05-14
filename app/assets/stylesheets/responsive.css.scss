@@ -5,7 +5,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-  body {border:5px solid red;}
+  // body {border:5px solid red;}
   #header {min-height:200px;}
   #logo {width:25%;}
   #phone {
@@ -39,13 +39,13 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
-  body {border:5px solid green;}
+  // body {border:5px solid green;}
   #logo {width:20%;}
 
  }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) { 
-    body {border:5px solid blue;}
+    // body {border:5px solid blue;}
 
  }
