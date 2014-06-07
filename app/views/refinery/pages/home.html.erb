@@ -3,212 +3,194 @@
   <%= raw @page.content_for(:phone) %> <%= raw @page.content_for(:email) %>
 <% end %>
 
-<div id="main-img">
+<div id="social-links">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 top_box" id="top">
-        <div class="row">
-
-        </div>
+      <div class="col-md-12 text-right">
+        <%= raw @page.content_for(:facebook) %> | 
+        <%= raw @page.content_for(:instagram) %>
       </div>
     </div>
   </div>
+
 </div>
 
-<div id="main-content">
+<div id="header-wrapper">
+<div class="container">
+  <div class="row">
+  <div class="col-md-2 col-md-offset-1 col-sm-2 ">
+    <%= image_tag 'blue-heron-logo-outlines.png', class: 'img-responsive' %>
+  </div>
+  <div class="col-md-3 col-md-offset-5 top-phone">
+    <%#= yield :phone_email %>
+    <%#= image_tag 'green-heron-logo-outlines.png', class: 'img-responsive' %>
+    <h4><span>Blue Heron - Onalaska</span><br />(608) 783-7433 (RIDE)</h4>
+    <h4><span>Green Heron - Trempealeau</span><br />(608) 534-7433 (RIDE)</h4>
+
+
+        
+  </div>
+</div>
+
+</div>
+</div>
+
+<header id="header">
+  <%#= render "/refinery/header" -%>
   <div class="container">
-    <div class="row" id="about">
-      <div class="col-md-7 col-sm-6">
-        <%= raw @page.content_for(:about) %>
-      </div>
-      <div class="col-md-4 col-sm-6" >
+
+    <div class="row about"  style="">
+      <div class="col-md-6 col-sm-6">
         <%#= raw @page.content_for(:about) %>
-        <div id="carousel-main" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators hidden-xs">
-            <% @photos.each_with_index do |image, index| %>
-              <li data-target="#carousel-main" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>"></li>
-            <% end %>
-          </ol>
+        <h1>Welcome to Heron Bikes</h1>
+        <p class="lead">Blue Heron is located on Main Street in downtown Onalaska, only a block from the Great River State Trail, overlooking the beautiful Mississippi River Valley!
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <% @photos.each_with_index do |image, index| %>
-              <div class="item <% if index == 0 %>active<% end %>">
-                <%= image_tag image.images.standard_resolution.url %>
-               <!--<div class="carousel-caption">
-                 ...
-                </div> -->
-              </div>
-            <% end %>
-          </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-main" data-slide="prev">
-            <span class="fa fa-chevron-left" style="position:absolute;top:47%;"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-main" data-slide="next">
-            <span class="fa fa-chevron-right" style="position:absolute;top:47%;"></span>
-          </a>
+Blue Heron is a full service bicycle shop able to sell, repair and rent bicycles. Once inside you may also find your favorite bicycle </p>
+        <div class="col-md-6">
+          <p class="address-hours"><strong>Address:</strong><br />
+            213 Main<br />
+             Onalaska, WI 54650
+           </p>
         </div>
+        <div class="col-md-6">
+          <p class="address-hours">
+            <strong>Hours:</strong><br />
+            Monday - Friday: 9AM to 6PM<br />
+            Saturday: 9AM to 4PM
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <%= image_tag 'bh-sf-DSC_0059.jpg', class: 'img-responsive' %>
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class="row about"  style="">
+      <div class="col-md-5">
+        <%= image_tag 'storefront2.jpg', class: 'img-responsive' %>
+      </div>
+      <div class="col-md-7 col-sm-6">
+        <%#= raw @page.content_for(:about) %>
+        <h2>Green Heron Bicycle Works in Trempealeau!</h2>
+        <p class="lead">We provide the destination. You provide the journey. Heron Bikes is proud to announce it's newest location in Trempealeau Wisconsin. Just down the road from the Trempealeau Hotel, our new shop will have a service area for light repairs, bike accessories and bike rentals. Everything you need to enjoy the trails and roads of the Trempealeau area!</p>
+        <div class="col-md-6">
+          <p class="address-hours"><strong>Address:</strong><br />
+            213 Main<br />
+             Onalaska, WI 54650
+           </p>
+        </div>
+        <div class="col-md-6">
+          <p class="address-hours">
+            <strong>Hours:</strong><br />
+            Monday - Friday: 9AM to 6PM<br />
+            Saturday: 9AM to 4PM
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="border-top:2px dotted rgba(0,0,0,.3);">
+      <div class="col-md-6 maps">
+        <h3>Blue Heron Bicycle Works - Onalaska, WI</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5751.3744120558395!2d-91.233885!3d43.88303200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f953144c856ee9%3A0x53eaf30da4492585!2s213+Main+St!5e0!3m2!1sen!2sus!4v1402081940667" width="100%" height="250" frameborder="0"  style="border:12px solid rgba(0,0,0,.2);"></iframe>
+      </div>
+      <div class="col-md-6 maps">
+        <h3>Green Heron Bicycle Works - Trempealeau, WI</h3>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5739.621051123809!2d-91.44074712808882!3d44.004642664537094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f94407413a0ed7%3A0x1c1c7a74f68b17bb!2s11369+Main+St!5e0!3m2!1sen!2sus!4v1402082457972" width="100%" height="250" frameborder="0" style="border:12px solid rgba(0,0,0,.2);"></iframe>
+
       </div>
 
     </div>
   </div>
-</div>
+  
+</header>
 
 
-
-<div class="trempealeau-body">
+<div id="great-river-trail">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Hello Trempealeau</h1>
+        <h1>The Great River Trail</h1>
       </div>
-    </div>
+      <div id="links" class="col-md-8 col-md-offset-2">
+        <p>The Great River Trail extends the La Crosse River Trail from Onalaska to Trempealeau. It features 24 miles scenic vistas of the midwest, crossing 18 different waterways including the Black River featuring a railroad trestle bridge.</p>
 
+<div class="row" id="bike-rentals">
+ <div class="col-md-4">
+          <%= image_tag 'rental2.png', class: 'img-responsive' %>
+        </div>
+        <div class="col-md-8" >
+          <h3>Bike Rentals</h3>
+          <p>Rent a bicycle at Blue Heron and discover why the Great River Trail is one of the most traveled, scenic trails in the state!</p>
+
+<p>We offer comfortable rental bikes at $15.00 a day and child trailers & instant tandems at $8.00.</p>
+
+
+        </div></div>
+        <!-- <p>Take a pedal down the Mississippi River on the Great River State Trail. Enjoy 24 miles of the most beautiful scenery in the Midwest. The trail traverses along 18 different waterways, crosses over the Black River on a 287-foot former railroad trestle, and follows Lake Onalaska and the BNSF railway. Pass through Mississippi River bottomlands, visit Nicholls Hopewell Mound, and the Upper Mississippi and Trempealeau National Wildlife Refuges. From its trailhead in Onalaska, all the way to Trempealeau, the Great River State Trail is one beautiful landscape after another and is perfect for any type of bicycle. Nearly 70,000 visitors per year enjoy this fantastic trail. - See more at: http://www.discoveronalaska.com/play/biking-2/#sthash.kNiNI20J.dpuf</p> -->
+      </div>
+
+    </div>
   </div>
+
+
 </div>
 
-<div id="trempealeau-text">
-  <div class="container">
-      <div class="row">
-      <div class="col-md-5 col-md-offset-1 ">
-        <p class="lead">We provide the destination. You provide the journey. Blue Heron Bikes is proud to announce it's newest location in Trempealeau Wisconsin. Just down the road from the Trempealeau Hotel our new shop will have a service area for light repairs, bike accessories and bike rentals. Everything you need to enjoy the trails and roads of the Trempealeau area!</p>
-      </div>
-      <div class="col-md-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22959.663452114513!2d-91.43106090000002!3d44.00159555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f9440376a57e81%3A0x55b73f7b0a0fdd5a!2sTrempealeau%2C+WI!5e0!3m2!1sen!2sus!4v1398264740122" width="100%" height="250" frameborder="0" style="border:12px solid rgba(0,0,0,.2);"></iframe>
 
 
-      </div>
-    </div>
-    </div>
-</div>
+
+
+
+
+
 
 
 
 
 <div id="brands">
   <div class="container">
-    <div class="row">
+     <div class="row">
+ 
+      <div class="col-md-4 ">
+        <h3 class="text-center">Bikes</h3>
+        <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+        <%= image_tag 'specialized-image.png', class: 'img-responsive' %>
+        </div>
+        </div>
+        <p>Heron Bikes is proud to feature Specialized. Specialized offers a full range of bicycles for everyone. Whether you are a commuter, a mountain biker, road cyclist or someone who just wants to experience the beautiful roads and trails of southwestern Wisconsin, we have the perfect bike for you. 
+        </p>
+      </div>
+
       <div class="col-md-4">
-        <h1>Bikes!</h1>
-        
+        <h3 class="text-center">Service</h3>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <%= image_tag 'service-image.png', class: 'img-responsive' %>
+          </div>
+        </div>
+        <p>Blue Heron is a full service shop. Owner, Kevin Miller, is the lead mechanic and has over a decade of experience wrenching on bikes. Our Trempealeau location, Green Heron, has a light repair station to keep you moving.</p>
 
+        <p>Every bicycle purchased from Blue Heron comes with a Lifetime Service Policy for minor adjustments.</p>
       </div>
-      <div class="col-md-8" id="brandbox">
-<p>Blue Heron specializes in the sales and repair of bicycles for all cycling enthusiasts! Whether you enjoy road riding, touring, mountain, BMX or family cycling we have it all!</p>
 
-<p>Blue Heron is proud to offer a Fit Guarantee for every bicycle purchased. Owner, Kevin Miller guarantees every bike fits to your need or will gladly exchange the bike for something that works for you. He will take the time to get you comfortable on your bike!
-</p>
+      <div class="col-md-4">
 
-<p>Blue Heron is an authorized dealer for the following companies:</p>
-
-<div class="row">
-  <div class="col-md-4 logos" style="padding-top:22px;"><%= link_to (image_tag 'b2b-footer-specialized-logo.png', class: 'img-responsive'), 'http://specialized.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:25px;"><%= link_to (image_tag 'logo.png', class: 'img-responsive'), 'http://www.breezerbikes.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:39px;"><%= link_to (image_tag 'GunnarYellow-2014BlackBullseyeBanner.jpg', class: 'img-responsive'), 'http://www.gunnarbikes.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:5px;"><%= link_to (image_tag 'linus.png', class: 'img-responsive'), 'http://www.linusbikes.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:15px;"><%= link_to (image_tag 'masi-logo.jpg', class: 'img-responsive'), 'http://www.masibikes.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:35px;"><%= link_to (image_tag 'redline.png', class: 'img-responsive'), 'http://www.redlinebicycles.com' %></div>
-  
-  <div class="col-md-4 logos" style="padding-top:3px;"><%= link_to (image_tag 'main-logo.jpg', class: 'img-responsive'), 'http://www.stolenbmx.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:28px;"><%= link_to (image_tag 'surly.png', class: 'img-responsive'), 'http://www.surlybikes.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:30px;"><%= link_to (image_tag 'veloorange.png', class: 'img-responsive'), 'http://www.velo-orange.com' %></div>
-  <div class="col-md-4 logos" style="padding-top:0px;"><%= link_to (image_tag 'waterford.png', class: 'img-responsive'), 'http://www.waterfordbikes.com' %></div>
-  <div class="col-md-4 logos"><%= link_to (image_tag 'soma-3.png', class: 'img-responsive', style: "height:100px !important;"), 'http://www.somafab.com'  %></div>
-
-
-  
-</div>
-
-
-
+        <h3 class="text-center">Accessories</h3>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <%= image_tag 'helmets.png', class: 'img-responsive' %>
+            </div>
+          </div>
+          <p>Heron Bikes is able to obtain anything you need to make the morning commute easier, the afternoon ride down the trail more comfortable, and the joy of riding safer for your family. Your</p>
       </div>
-    </div>
-  </div>
 
-
-
-</div>
-
-
-
-
-<div id="rental-services-accessories">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4" id="services">
-        <h1>Service</h1>
-        <%= image_tag 'services.png', class: 'img-responsive' %>
-        <p>Blue Heron is a full service shop. Owner, Kevin Miller, is the lead mechanic and has over a decade of experience wrenching on bikes. His local reputation as an excellent mechanic and experienced salesman has been proven by the support of the local community.
-
-Every bicycle purchased from Blue Heron comes with a Lifetime Service Policy for minor adjustments.</p>
-      </div>
-      <div class="col-md-4" id="accessories">
-        <h1>Accessories</h1>
-        <%= image_tag 'accessories.png', class: 'img-responsive' %>
-        <p>Blue Heron is able to obtain anything you need to make the morning commute easier, the afternoon ride down the trail more comfortable, and the joy of riding safer for your family.</p>
-        <ul>
-          <li>Ortlieb USA,LLC</li>
-          <li>Jandd</li>
-          <li>Topeak</li>
-          <li>Bell</li>
-          <li>Giro</li>
-          <li>Pro-Tec (Skate &amp; BMX Helmets)</li>
-          <li>Borah</li>
-          <li>Craft</li>
-          <li>Ibex</li>
-          <li>Endura</li>
-          <li>EWNR</li>
-          <li>Burley</li>
-          <li>Alley Cat</li>
-        </ul>
-      </div>
-      <div class="col-md-4" id="rentals">
-        <h1>Rentals</h1>
-        <%= image_tag 'rental.png', class: 'img-responsive' %>
-        <p>Rent a bicycle at Blue Heron and discover why the Great River Trail is one of the most traveled, scenic trails in the state!</p>
-
-<p>We offer comfortable rental bikes at $15.00 a day and child trailers & instant tandems at $8.00.</p>
-
-<p>Individual and family rentals include helmets. Daily trail passes are sold separately at the shop and are $4.00. Rentals are available on a first come, first served basis; reservations are not accepted. Accomodations may be arranged for larger groups. Renters may arrange for shuttles on their own, through the local cab service, typically $25.00 per run.</p>
-
-<p>A1 Taxi Service Inc. #608.781-6655</p>
-
-<p>Bee Cab Inc. #608.784-4233</p>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-
-
-
-
-<div id="info-content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <h3>Hours</h3>
-        <%= raw @page.content_for(:hours) %>
-      </div>
-      <div class="col-md-2">
-        <h3>Location</h3>
-        <%= raw @page.content_for(:location) %>
-      </div>
-      <div class="col-md-5">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1437.8266847477805!2d-91.23403252149045!3d43.88373297302772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f953144c856ee9%3A0x53eaf30da4492585!2s213+Main+St!5e0!3m2!1sen!2sus!4v1400076404467" width="100%" height="250" frameborder="0" style="border:5px;"></iframe>
-
-
-      </div>
-      <div class="col-md-2">
-        <h3>Connect</h3>
-        <%= raw @page.content_for(:facebook) %><br />
-        <%= raw @page.content_for(:instagram) %>
-      </div>
     </div>
   </div>
 </div>
