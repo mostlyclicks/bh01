@@ -18,18 +18,17 @@
 <div id="header-wrapper">
 <div class="container">
   <div class="row">
-  <div class="col-md-2 col-sm-2 ">
+  <div class="col-md-2 col-sm-2 col-xs-6">
     <%= image_tag 'blue-heron-logo-outlines.png', class: 'img-responsive' %>
   </div>
-  <div class="col-md-2"><%= image_tag 'green-heron-logo-outlines.png', class: 'img-responsive' %></div>
-  <div class="col-md-3 col-md-offset-5 top-phone">
+  <div class="col-md-2 col-sm-2 col-xs-6">
+    <%= image_tag 'green-heron-logo-outlines.png', class: 'img-responsive' %>
+  </div>
+  <div class="col-md-4 col-md-offset-4 top-phone col-xs-12 col-sm-5 col-sm-offset-3">
     <%#= yield :phone_email %>
     <%#= image_tag 'green-heron-logo-outlines.png', class: 'img-responsive' %>
     <h4><span>Blue Heron - Onalaska</span><br />(608) 783-7433 (RIDE)</h4>
-    <h4><span>Green Heron - Trempealeau</span><br />(608) 534-7433 (RIDE)</h4>
-
-
-        
+    <h4><span>Green Heron - Trempealeau</span><br />(608) 534-7433 (RIDE)</h4>      
   </div>
 </div>
 
@@ -41,19 +40,19 @@
   <div class="container">
 
     <div class="row about"  style="">
-      <div class="col-md-6 col-sm-6">
+      <div class="col-md-6 col-sm-12">
         <%#= raw @page.content_for(:about) %>
         <h1>Welcome to Heron Bikes</h1>
         <p class="lead">Blue Heron is located on Main Street in downtown Onalaska, only a block from the Great River State Trail, overlooking the beautiful Mississippi River Valley!
 
 Blue Heron is a full service bicycle shop able to sell, repair and rent bicycles. Once inside you may also find your favorite bicycle </p>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
           <p class="address-hours"><strong>Address:</strong><br />
             213 Main<br />
              Onalaska, WI 54650
            </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
           <p class="address-hours">
             <strong>Hours:</strong><br />
             Monday - Friday: 9AM to 6PM<br />
@@ -66,17 +65,12 @@ Blue Heron is a full service bicycle shop able to sell, repair and rent bicycles
         <%= image_tag 'bh-sf-DSC_0059.jpg', class: 'img-responsive' %>
       </div>
 
-
-
-
-
-
     </div>
     <div class="row about"  style="">
-      <div class="col-md-5">
+      <div class="col-md-5 col-xs-12">
         <%= image_tag 'storefront2.jpg', class: 'img-responsive' %>
       </div>
-      <div class="col-md-7 col-sm-6">
+      <div class="col-md-7 col-sm-12 col-xs-12">
         <%#= raw @page.content_for(:about) %>
         <h2>Green Heron Bicycle Works in Trempealeau!</h2>
         <p class="lead">We provide the destination. You provide the journey. Heron Bikes is proud to announce it's newest location in Trempealeau Wisconsin. Just down the road from the Trempealeau Hotel, our new shop will have a service area for light repairs, bike accessories and bike rentals. Everything you need to enjoy the trails and roads of the Trempealeau area!</p>
@@ -122,22 +116,21 @@ Blue Heron is a full service bicycle shop able to sell, repair and rent bicycles
       <div id="links" class="col-md-8 col-md-offset-2">
         <p>The Great River Trail extends the La Crosse River Trail from Onalaska to Trempealeau. It features 24 miles scenic vistas of the midwest, crossing 18 different waterways including the Black River featuring a railroad trestle bridge.</p>
 
-<div class="row" id="bike-rentals">
- <div class="col-md-4">
-          <%= image_tag 'rental2.png', class: 'img-responsive' %>
+        <div class="row" id="bike-rentals">
+          <div class="col-md-4 col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-3">
+            <%= image_tag 'rental2.png', class: 'img-responsive' %>
+          </div>
+          <div class="col-md-8 col-xs-12 col-sm-9">
+            <h3>Bike Rentals</h3>
+            <p>Rent a bicycle at Blue Heron and discover why the Great River Trail is one of the most traveled, scenic trails in the state!</p>
+
+            <p>New rental rates are $18 per day and $12 for a trailer or instant tandem.</p>
+
+            <p>Fat bike rentals are $35 per day.<br />
+            Multiple day discounts are available.</p>
+          </div>
         </div>
-        <div class="col-md-8" >
-          <h3>Bike Rentals</h3>
-          <p>Rent a bicycle at Blue Heron and discover why the Great River Trail is one of the most traveled, scenic trails in the state!</p>
 
-<p>New rental rates are $18 per day and $12 for a trailer or instant tandem.</p>
-
-<p>Fat bike rentals are $35 per day.<br />
-Multiple day discounts are available.</p>
-
-
-        </div></div>
-        <!-- <p>Take a pedal down the Mississippi River on the Great River State Trail. Enjoy 24 miles of the most beautiful scenery in the Midwest. The trail traverses along 18 different waterways, crosses over the Black River on a 287-foot former railroad trestle, and follows Lake Onalaska and the BNSF railway. Pass through Mississippi River bottomlands, visit Nicholls Hopewell Mound, and the Upper Mississippi and Trempealeau National Wildlife Refuges. From its trailhead in Onalaska, all the way to Trempealeau, the Great River State Trail is one beautiful landscape after another and is perfect for any type of bicycle. Nearly 70,000 visitors per year enjoy this fantastic trail. - See more at: http://www.discoveronalaska.com/play/biking-2/#sthash.kNiNI20J.dpuf</p> -->
       </div>
 
     </div>
@@ -161,33 +154,33 @@ Multiple day discounts are available.</p>
   <div class="container">
      <div class="row">
  
-      <div class="col-md-4 ">
+      <div class="col-md-4 col-sm-4">
         <h3 class="text-center">Bikes</h3>
         <div class="row">
         <div class="col-md-8 col-md-offset-2">
-        <%= image_tag 'specialized-image.png', class: 'img-responsive' %>
+        <%= image_tag 'specialized-image.png', class: 'img-responsive hidden-xs' %>
         </div>
         </div>
         <p>Heron Bikes is proud to feature Specialized. Specialized offers a full range of bicycles for everyone. Whether you are a commuter, a mountain biker, road cyclist or someone who just wants to experience the beautiful roads and trails of southwestern Wisconsin, we have the perfect bike for you. 
         </p>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-4">
         <h3 class="text-center">Service</h3>
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <%= image_tag 'service-image.png', class: 'img-responsive' %>
+            <%= image_tag 'service-image.png', class: 'img-responsive hidden-xs' %>
           </div>
         </div>
         <p>Blue Heron is a full service shop. Owner, Kevin Miller, is the lead mechanic and has over a decade of experience wrenching on bikes. Our Trempealeau location, Green Heron, has a light repair station to keep you moving.</p>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-4 col-sm-4">
 
         <h3 class="text-center">Accessories</h3>
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
-              <%= image_tag 'helmets.png', class: 'img-responsive' %>
+              <%= image_tag 'helmets.png', class: 'img-responsive  hidden-xs' %>
             </div>
           </div>
           <p>Heron Bikes is able to obtain anything you need to make the morning commute easier, the afternoon ride down the trail more comfortable, and the joy of riding safer for your family.</p>

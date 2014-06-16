@@ -5,7 +5,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-  // body {border:5px solid red;}
+  body {border:5px solid red;}
   //#header {min-height:200px;}
   #logo {width:25%;}
   #phone {
@@ -16,8 +16,17 @@
     margin-top:30px;
   }
 
-  #about {
+  .top-phone {
+    margin-top:0;
+    h4 {
+      margin-top:0;
+      font-size:18px;
+    }
+  }
 
+  .about {
+
+    padding:0px 0 0 0;
 
     h1 {
       font-size:42px !important;
@@ -32,8 +41,17 @@
      transform:rotate(3deg);
      -ms-transform:rotate(3deg); /* IE 9 */
      -webkit-transform:rotate(3deg); /* Opera, Chrome, and Safari */
+      }
     }
-  }
+
+    #bike-rentals {
+      padding-top:0px;
+      h3 {
+        text-align:left;
+        margin-top:-20px;
+
+      }
+    }
 
 
 
@@ -41,8 +59,18 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
-  // body {border:5px solid green;}
+  body {border:5px solid green;}
   #logo {width:20%;}
+
+  .top-phone {
+    margin-top:10px;
+    h4 {
+      font-size:22px;
+    }
+  }
+
+
+
 
  }
 
@@ -50,7 +78,26 @@
 @media (min-width: $screen-lg-min) { 
     // body {border:5px solid blue;}
     #great-river-trail {
-      h1 {margin-bottom:200px;}
+      h1 {
+        margin-bottom:200px;
+        font-size:72px;
+      }
+      #links {
+        font-size:28px;
+      }
     }
+
+    .top-phone {
+    margin-top:15px;
+    h4 {
+      font-size:24px;
+    }
+  }
+
+  .about {
+    margin-bottom:20px;
+  }
+
+
 
  }
