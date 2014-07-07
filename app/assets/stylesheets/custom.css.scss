@@ -189,7 +189,7 @@ body {
 }
 
 #great-river-trail {
-  padding:10px 30px;
+  padding:0px 30px;
   min-height:500px;
   background-image:url(/assets/trails_DSC_0106.png);
   background-size:cover;
@@ -223,9 +223,33 @@ body {
     border-radius:10px;
     margin-bottom:20px;
   }
+  #links2 {
+    background-image:url(/assets/map-bg.png);
+    background-repeat:no-repeat;
+    background-size:100%;
+    min-height:400px;
+    padding:70px 0 20px 0;
+    #left {
+      p {
+        font-size:29px;
+        font-family: $bree;
+      }
+    }
+    #right {
+      h3 {
+        color:$bh-fade-yellow;
+        text-shadow: none;
+        font-size:42px;
+      }
+      p {
+        color:#000;
+      }
+
+    }
+  }
   #bike-rentals {
-    margin-top:20px;
-    padding-top:20px;
+    margin-top:0px;
+    padding-top:0px;
     border-top:2px dotted rgba(255,255,255,.2);
     font-family:$source-sans;
     font-size:16px;
