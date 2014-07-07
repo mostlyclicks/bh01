@@ -5,7 +5,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-  // body {border:5px solid red;}
+  //body {border:5px solid red;}
   //#header {min-height:200px;}
   #logo {width:25%;}
   #phone {
@@ -48,18 +48,51 @@
       padding-top:0px;
       h3 {
         text-align:left;
-        margin-top:-20px;
+        margin-top:0px;
 
       }
+      img {
+        margin-top:20px;
+      }
+    }
+
+    #great-river-trail {
+  
+
+    }
+
+    #links2 {
+      padding:-40px 0 0 0;
+      margin-top:300px;
+      margin-bottom:-20px;
+      #left {
+        border-right:1px dotted transparent;
+        p {
+          color:black;
+          font-size:18px !important;
+          margin-top:-20px;
+
+        }
+
+         
+      }
+      
     }
 
 
 
  }
+ // #links2 {
+ //  #left {
+ //    p {font-size:18px;}
+ // }
+
+ // }
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
-  // body {border:5px solid green;}
+  //body {border:5px solid green;}
   #logo {width:20%;}
 
   .top-phone {
@@ -69,6 +102,23 @@
     }
   }
 
+     #links2 {
+      padding:-40px 0 0 0;
+      margin-top:300px;
+      margin-bottom:0px;
+      #left {
+        border-right:2px dotted rgba(0,0,0,.2);
+        p {
+          color:black;
+          font-size:29px !important;
+          margin-top:0px;
+        }
+
+         
+      }
+      
+    }
+
 
 
 
@@ -76,7 +126,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) { 
-    // body {border:5px solid blue;}
+    //body {border:5px solid blue;}
     #great-river-trail {
       h1 {
         margin-bottom:200px;
@@ -96,6 +146,10 @@
 
   .about {
     margin-bottom:20px;
+  }
+
+  #links2 {
+    margin-bottom:-20px;
   }
 
 

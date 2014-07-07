@@ -224,25 +224,32 @@ body {
     margin-bottom:20px;
   }
   #links2 {
+    // margin-bottom:20px;
     background-image:url(/assets/map-bg.png);
     background-repeat:no-repeat;
-    background-size:100%;
+    
+    background-size:cover;
     min-height:400px;
-    padding:70px 0 20px 0;
+    padding:70px 0 0px 0;
+    background-position-x:50%;
+
     #left {
       p {
-        font-size:29px;
+        font-size:20px;
         font-family: $bree;
       }
     }
     #right {
       h3 {
-        color:$bh-fade-yellow;
+        color:darken($bh-fade-yellow, 5%);
         text-shadow: none;
         font-size:42px;
       }
       p {
         color:#000;
+      }
+      img {
+        margin-bottom:20px;
       }
 
     }
@@ -250,7 +257,7 @@ body {
   #bike-rentals {
     margin-top:0px;
     padding-top:0px;
-    border-top:2px dotted rgba(255,255,255,.2);
+    // border-top:2px dotted rgba(255,255,255,.2);
     font-family:$source-sans;
     font-size:16px;
     font-weight:200;
