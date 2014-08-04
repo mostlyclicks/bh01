@@ -1,8 +1,10 @@
 <div class="container">
   <!-- <h2><%#= @page.title %></h2> -->
-  <div class="">
-    <%= raw @page.content_for(:body)%>
+  <div>
+    <%#= raw @page.content_for(:body)%>
 
   </div>
-  <%#= render '/refinery/content_page' %>
+  <div class="row">
+    <div class="col-md-12">
+      <%= render '/refinery/content_page' %></div></div>
 </div>
