@@ -1,1 +1,8 @@
-<%= render '/refinery/content_page' %>
+<div class="container">
+  <!-- <h2><%#= @page.title %></h2> -->
+  <div class="">
+    <%= raw @page.content_for(:body)%>
+
+  </div>
+  <%#= render '/refinery/content_page' %>
+</div>
