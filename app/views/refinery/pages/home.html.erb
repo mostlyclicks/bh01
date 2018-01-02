@@ -7,12 +7,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-right">
-       
         <%= raw @page.content_for(:instagram) %>
       </div>
     </div>
   </div>
-
 </div>
 
 <div id="header-wrapper">
@@ -37,9 +35,7 @@
 </div>
 
 <header id="header">
-  <%#= render "/refinery/header" -%>
   <div class="container">
-
     <div class="row about"  style="">
       <div class="col-md-6 col-sm-12">
         <%= raw @page.content_for(:about) %>
@@ -93,12 +89,13 @@
       <div class="col-md-4 col-sm-4">
         <h3 class="text-center">Bikes</h3>
         <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-        <%= image_tag 'specialized-image.png', class: 'img-responsive hidden-xs' %>
+          <div class="col-md-8 col-md-offset-2">
+          <%= image_tag 'specialized-image.png', class: 'img-responsive hidden-xs' %>
+          </div>
         </div>
-        </div>
-        <p>Coulee Bike Company is proud to feature Specialized. Specialized offers a full range of bicycles for everyone. Whether you are a commuter, a mountain biker, road cyclist or someone who just wants to experience the beautiful roads and trails of southwestern Wisconsin, we have the perfect bike for you. 
-        </p>
+        <%= raw @page.content_for(:featured_brands) %>
+<!--         <p>Coulee Bike Company is proud to feature Specialized. Specialized offers a full range of bicycles for everyone. Whether you are a commuter, a mountain biker, road cyclist or someone who just wants to experience the beautiful roads and trails of southwestern Wisconsin, we have the perfect bike for you. 
+        </p> -->
       </div>
 
       <div class="col-md-4 col-sm-4">
@@ -108,7 +105,8 @@
             <%= image_tag 'service-image.png', class: 'img-responsive hidden-xs' %>
           </div>
         </div>
-        <p>Coulee Bicycle Company is a full service shop. With an expert mechanic on staff and high quality replacement parts, we're happy to get you rolling again.</p>
+        <%= raw @page.content_for(:service) %>
+<!--         <p>Coulee Bicycle Company is a full service shop. With an expert mechanic on staff and high quality replacement parts, we're happy to get you rolling again.</p> -->
       </div>
 
       <div class="col-md-4 col-sm-4">
@@ -119,7 +117,8 @@
               <%= image_tag 'helmets.png', class: 'img-responsive  hidden-xs' %>
             </div>
           </div>
-          <p>Coulee Bike Company is able to obtain anything you need to make the morning commute easier, the afternoon ride down the trail more comfortable, and the joy of riding safer for your family.</p>
+          <%= raw @page.content_for(:accessories) %>
+<!--           <p>Coulee Bike Company is able to obtain anything you need to make the morning commute easier, the afternoon ride down the trail more comfortable, and the joy of riding safer for your family.</p> -->
       </div>
 
     </div>
