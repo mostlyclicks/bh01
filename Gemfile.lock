@@ -229,6 +229,3 @@ DEPENDENCIES
   refinerycms-page-images (~> 2.1.0)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
-
-BUNDLED WITH
-   1.10.5

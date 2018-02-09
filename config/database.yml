@@ -15,10 +15,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: bh01_development
+  database: vagrant_development
   pool: 5
-  username: bh01
-  password:
+  username: vagrant
+  password: vagrant
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
